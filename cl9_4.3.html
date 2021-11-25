@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Fișiere text în limbajul C</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Fișiere</h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>3</div>
+										<div>ian</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Fișiere text în limbajul C</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="news_post_text">
+							<p>
+							<h2>&nbsp &nbsp &nbsp Declararea fișierelor</h2>
+							&nbsp &nbsp &nbsp Operațiile de intrare/ieșire în limbajul C au fost realizate până acum utilizând instrucțiunile <samp>scanf()</samp> și <samp>printf()</samp>, care implicit preiau informații de la tastatură și, respectiv, le transmit pe ecran. Pentru ca un program să poată prelucra informații dintr-un fișier, acesta trebuie declarat, indicându-se numele lui precum și operațiile permise asupra conținutului fișierului respectiv.<br />
+							&nbsp &nbsp &nbsp În fișierul antet <samp>stdio.h</samp> sunt declarate, printre altele, și funcțiile, constantele, tipurile de date și variabilele globale cu ajutorul cărora pot fi prelucrate informațiile conținute în fișiere. Pentru a utiliza într-un program operații de intrare/ieșire folosind fișiere trebuie să declarăm una sau mai multe variabile de tip <samp>FILE *</samp>. Declarația unui fișier se face astfel:<br />
+							<script src="https://gist.github.com/Andreea516/6cb4a7f43ef61e776d4b8237b71d5853.js"></script>
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Declarația precedentă respectă sintaxa declarațiilor de variabile (<samp>FILE *</samp> reprezintă tipul, iar <samp>fisier</samp> reprezintă numele variabilei).<br />
+							<br />
+							<h2>&nbsp &nbsp &nbsp Deschiderea fișierelor</h2>
+							&nbsp &nbsp &nbsp Desigur, pentru a avea acces la informațiile din fișier trebuie să fie cunoscut conținutul fizic de pe suport (specificatorul de fișier conform sintaxei sistemului de operare utilizat), ca și modul în care vor fi prelucrate informațiile din fisier. Acest lucru se realizează utilizând funcția <samp>fopen</samp>.<br />
+							<script src="https://gist.github.com/Andreea516/b612232e9b78c90bb5132519baf6aba0.js"></script>
+							unde <samp>nume</samp> este o constantă de tip șir de caractere care reprezintă specificatorul fișierului fizic pe suport , iar <samp>mod</samp> este o constantă șir de caractere care indică modul în care vor fi accesate informațiile din fișier.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemple</b><br />
+							<script src="https://gist.github.com/Andreea516/a41272ef8557105719f3da76e97d6e5a.js"></script>
+							&nbsp &nbsp &nbsp Deschiderea și declararea unui fișier se pot face și simultan:<br />
+							&nbsp &nbsp &nbsp <b>Exemplul 1</b><br />
+							<script src="https://gist.github.com/Andreea516/f119f96a133d3b4318672b1f97ee9233.js"></script>
+							&nbsp &nbsp &nbsp Am declarat fișierul de intrare denumit <samp>f1</samp>, apoi l-am deschis cu ajutorul funcției <samp>fopen</samp>, asociindu-i fișierul <samp>date.in</samp>. Deoarece în toate exemplele anterioare nu am precizat discul logic pe care se află fișierele sau calea către directorul în care se află acestea, se deduce că fișierele se află pe hard-disk în directorul curent.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplul 2</b><br />
+							<script src="https://gist.github.com/Andreea516/9a0cc856936bfeae57fb928a4c135965.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un fișier de ieșire denumit <samp>f2</samp>, pe care l-am asociat fișierului fizic <samp>date.out</samp>, care se află pe discul <samp>c:</samp>, în directorul <samp>exemple</samp>, care este un subdirector al directorului <samp>ema</samp>.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Dacă, după operația de deschidere a fișierului, variabila corespunzătoare are valoarea <samp>NULL</samp>, deducem că operația de deschidere a eșuat (de exemplu, dacă dorim să deschidem un fișier de intrare care nu există(). Este indicat să testăm succesul operației de deschidere înainte de a efectua orice altă operației cu fișierul.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplu 3</b><br />
+							<script src="https://gist.github.com/Andreea516/415fdc90e034f55ef3fd1e96ffa48d34.js"></script>
+							&nbsp &nbsp &nbsp Testarea erorii la deschiderea fișierului se poate face și astfel:<br />
+							<script src="https://gist.github.com/Andreea516/f35a9bf0f7458dd06950794d06b62961.js"></script>
+							<br />
+							<h2>&nbsp &nbsp &nbsp Citirea datelor dintr-un fișier</h2>
+							&nbsp &nbsp &nbsp După deschiderea fișierului ca fișier de intrare se pot rwaliza operații de citire. În acest scop se utilizaeză funcția <samp>fscanf</samp>.<br />
+							<script src="https://gist.github.com/Andreea516/1e48da615ba4a896edbd4e8eb4df37df.js"></script>
+							&nbsp &nbsp &nbsp Observați că prototipul funcșiei <samp>fcanf()</samp> este asemănător cu prototipul funcției <samp>scanf()</samp>. Funcția <samp>fscanf()</samp> are în plus, ca prim parametru, fi;ierul din care se face citirea. În rest, semnificația parametrilor, rezultatul și efectul funcției sunt aceleași ca în cazul funcției <samp>scanf()</samp>.<br />
+							<br />
+							<h2>&nbsp &nbsp &nbsp Scrierea datelor într-un fișier</h2>
+							&nbsp &nbsp &nbsp După deschiderea fișierului ca fișier de ieșire, se pot realiza operații de scriere utilizând funcția <samp>fprintf</samp>.<br />
+							<script src="https://gist.github.com/Andreea516/9fc77cc4cb7ab180d00c0208b716cdd7.js"></script>
+							&nbsp &nbsp &nbsp Observați că prototipul funcției <samp>fprintf()</samp> are în plus, ca rpim parametru, fișierul în care se face afișarea. În rest, semnificația parametrilor, rezultatul și efectul funcției sunt aceleași ca și în cazul funcției <samp>printf()</samp>.<br />
+							<br />
+							<h2>&nbsp &nbsp &nbsp Închiderea fișierelor</h2>
+							&nbsp &nbsp &nbsp După terminarea tuturor operațiilor care implică lucrul cu fișiere, acestea trebuie închise. Funcția care realizează acest lucru este:<br />
+							<script src="https://gist.github.com/Andreea516/6d0c93ab32bf34b7e013a050957b52bc.js"></script>
+							&nbsp &nbsp &nbsp <b>Exemplul 1</b><br />
+							&nbsp &nbsp &nbsp Să scriem un program care citește din fișierul de intrare <samp>nr.in</samp> un număr natural <samp>n (0</samp><samp><</samp><samp>n≤100)</samp> și apoi <samp>n</samp> valori naturale și afișează în fișierul de ieșire <samp>nr.out</samp> numerele citite descompuse în factori primi, pe fiecare linie fiind scris câte un număr urmat de perechi de forma <samp>(d,p)</samp>, indicând divizorul și puterea lui.
+							<script src="https://gist.github.com/Andreea516/e7cac91515bb29998b86e8b8f11e5d7d.js"></script>
+							&nbsp &nbsp &nbsp <b>Exemplul2</b><br />
+							&nbsp &nbsp &nbsp Scrieți un program care creează o copie a fișierului <samp>intrare.txt</samp> cu numele <samp>iesire.txt</samp>. 
+							<script src="https://gist.github.com/Andreea516/d90354889995ef444b71ae146e4f63bc.js"></script>
+							</p>
+							</div>
+
+						</div>
+
+					</div>
+				
+					
+					
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

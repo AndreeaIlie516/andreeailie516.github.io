@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Citiri și scrieri în limbajul C</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Elemente de bază ale limbajului C/ C++</h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>17</div>
+										<div>dec</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Citiri și scrieri în limbajul C</a>
+									</div>
+									
+								</div>
+							</div>
+
+							<!-- <div class="news_post_quote">
+								<p class="news_post_quote_text"><b>&nbsp &nbsp &nbsp <span>S</span>eparatorii</b> au rolul de a separa unitățile sintactice.</p>
+							</div> -->
+							
+							<div class="news_post_text">
+							    <p>
+								&nbsp &nbsp &nbsp Citirile și scrierile în limbajul C se realizaeză prin intermediul unor funcții specifice. <br />
+								&nbsp &nbsp &nbsp <h2> Citirea datelor cu format specificat</h2>
+								&nbsp &nbsp &nbsp Funcția <samp>scanf()</samp> permite citirea datelor sub controlul unui format specificat. Această funcție este declarată în fișierul antet <samp>stdio.h</samp> și are următorul format:<br />
+								<script src="https://gist.github.com/Andreea516/5d24e9c9d4f6421428fb2cbbba5cbc4c.js"></script>
+								&nbsp &nbsp &nbsp <i>Efect</i><br />
+								&nbsp &nbsp &nbsp Funcția parcurge succesiunea de caractere introdusă de la tastatură și extrage valorile care trebuie citite conform formatului specificat. Valorile citite sunt memorate în ordine în variabile specificate prin adresa lor în lista de parametri ai funcșiei <samp>scanf()</samp>. Adresa unei variabile se obține cu ajutorul operatorului de referențiere (<samp> & </samp>). Acest operator este unar (are un singur operand, care trebuie să fie o variabilă): <samp>&variabila. </samp><br />
+								&nbsp &nbsp &nbsp Funcția <samp>scanf()</samp> returnează numărul de valori citite corect. În cazul unei erori, funcția se întrerupe în poziția în care a fost întâlnită eroarea. <br />
+								&nbsp &nbsp &nbsp <b>Observație</b><br />
+								&nbsp &nbsp &nbsp Dacă în lista de parametri ai funcției <samp>scanf()</samp> specificați doar numele variabilei, nu adresa acesteia, funcția va citi valoarea corespunzătoare acestei variabile, dar la ieșirea din funcție valoarea citită nu este atribuită variabilei respective. <br />
+								&nbsp &nbsp &nbsp Parametrul <samp>format</samp> este un șir de caractere care poate conține specificatori de format, caractere albe și alte caractere. <br />
+								&nbsp &nbsp &nbsp Caracterele albe vor fi ignorate. Celelalte caractere (care nu fac parte dintr-un specificator de format) trebuie să fie prezente la intrare în pozițiile corespunzătoare. <br />
+								&nbsp &nbsp &nbsp Specificatorii de format au următoarea sintaxă: <br />
+								<script src="https://gist.github.com/Andreea516/c19bea1706dbccab519422e45ab1865b.js"></script>
+								&nbsp &nbsp &nbsp Observați că orice specificator de format începe cu caracterul <samp>%</samp>, conține obligatoriu o literă ce indică tipul valorii care se citește și, eventual, alte elemente opționale. Litera ce indică tipul poate fi, de exemplu:<br />
+                                <table border="2px" style="text-align:center;">
+                                    <tr><th width="15%">Literă_tip</th><th>Semnificație</th></tr>
+                                    <tr><td>d</td><td>Se citește un număr întreg scris în baza 10, care va fi memorat într-o variabilă de tip <samp>int</samp></td></tr>
+									<tr><td>o</td><td>Se citește un număr întreg scris în baza 8, care va fi memorat într-o variabilă de tip <samp>int</samp></td></tr>
+									<tr><td>u</td><td>Se citește un număr întreg scris în baza 10, care va fi memorat într-o variabilă de tip <samp>unsigned int</samp></td></tr>
+									<tr><td>x</td><td>Se citește un număr întreg scris în baza 16, care va fi memorat într-o variabilă de tip <samp>int</samp></td></tr>
+									<tr><td>f,e sau g</td><td>Se citește un număr întreg scris în baza 10, care va fi memorat într-o variabilă de tip <samp>float</samp></td></tr>
+									<tr><td>c</td><td>Se citește un caracter (în acest caz, caracterele albe prezente la intrare nu se ignoră)</td></tr>
+									<tr><td>s</td><td>Se citește un șir de caractere (șirul începe cu următorul caracter care nu este alb și continuă până la primul caracter alb întâlnit sau până la epuizarea dimensiunii maxime <samp>lg</samp> din specificatorul de format).</td></tr>
+								</table>
+								&nbsp &nbsp &nbsp Opțional, unele litere pot fi precedate de litera <samp>l</samp> sau de litera <samp>L</samp>. Literele <samp>d,o</samp> și <samp>x</samp> pot fi precedate de litera <samp>l</samp>, caz în care valoarea citită va fi convertită la tipul <samp>long int</samp>. Litera <samp>u</samp> poate fi precedată de litera <samp>l</samp>, caz în care valoarea citită va fi convertită la tipul <samp>unsigned long int</samp> literele <samp>f,e,g</samp> pot fi precedate de litera <samp>l</samp> (caz în care valoarea citită este convertită la tipul <samp>double</samp>) sau de litera <samp>L</samp> (caz în care valoarea citită este convertită șa tipul <samp>long double</samp>).<br />
+								&nbsp &nbsp &nbsp Opțional poate fi specificată și <samp>lg</samp> - lungimea maximă a zonei în care se citește valoarea. Mai exact, fucția <samp>scanf()</samp> va citi maxim <samp>lg</samp> caractere, până la întâlnirea unui caracter alb sau a unui caracter neconvertibil în tipul specificat de <samp>litera_tip</samp>.<br />
+								&nbsp &nbsp &nbsp Caracterul opțional '<samp>*</samp>' specifică faptul că la intrare este prezentă o dată de tipul specificat de acest specificator de format, dar ea nu va fi atribuită nici uneia dintre variabile specificate în lista de parametri ai funcției <samp>scanf()</samp>.<br />
+								&nbsp &nbsp &nbsp <b>Observație</b><br />
+								&nbsp &nbsp &nbsp Caracterul <samp>%</samp> are o semnificație specială în parametrul format, el indică începutul unui specificator de format. Dacă dorim să specificăm în parametrul format că la intrare trebuie să apară caracterul <samp>%</samp>, vom utiliza construcția sintactică <samp>%%</samp>.<br />
+								&nbsp &nbsp &nbsp <i>Exemple</i><br />
+								1.Să considerăm următoarele declarații de variabile:<br />
+								<script src="https://gist.github.com/Andreea516/a218525a208c2a83849c4bad753e8bd0.js"></script>
+								&nbsp &nbsp &nbsp Să presupunem cp de la tastatură sunt introduse caracterele: <samp>312 -4.5 100000</samp>. Apelând funcția:<br />
+								<script src="https://gist.github.com/Andreea516/663efc85c193f1fe88dc2e800e3a1e4f.js"></script>
+								variabilei <samp>a</samp> i se atribuie valoarea <samp>312</samp>, variabilei <samp>x</samp> i se atribui valoarea  <samp>-4.5</samp>, iar variabilei <samp>b</samp> i se atribuie valoarea <samp>100000</samp>.<br />
+								2.Să considerăm  următoarea declarație de variabile: <br />
+								<script src="https://gist.github.com/Andreea516/99de832be272799674ca520a90bdac6c.js"></script>
+								&nbsp &nbsp &nbsp Să presupunem că de la tastatură sunt introduse caracterele: <samp>312</samp>. Apelând funcția: <br />
+								<script src="https://gist.github.com/Andreea516/d4da4f3654acb6476ffd08fd8ff0edcf.js"></script>
+								variabilei <samp>c1</samp> i se atribuie caracterul '<samp>3</samp>', variabilei <samp>c2</samp> i se atribuie caracterul '<samp>1</samp>', iar variabilei c3 i se atribuie caracterul '<samp>2</samp>'.<br />
+								3.Să considerăm următoarele declarații de variabile:<br />
+								<script src="https://gist.github.com/Andreea516/c535f6b45fdcb1057bf586d2d52b12a4.js"></script>
+								Să presupunem că de la tastatură  se introduce <samp>312 xd</samp> Apelând funcția:<br />
+								<script src="https://gist.github.com/Andreea516/44046569caec57ba5cb640e63631873f.js"></script>
+								variabilei <samp>a</samp> i se atribuie valoarea <samp>312</samp>, variabilei <samp>c1</samp> i se atribuie caracterul '<samp> </samp>'(spațiu), iar variabilei <samp>c2</samp> i se atribuie caracterul <samp>x</samp>.<br />
+								&nbsp &nbsp &nbsp  Apelând funcția: <br />
+								<script src="https://gist.github.com/Andreea516/804895ce4379609c26f681926f4a304e.js"></script>
+								variabilei <samp>a</samp> i se atribuie valoarea <samp>312</samp>, variabilei <samp>c1</samp> i se atribuie caracterul '<samp>x</samp>', iar variabilei <samp>c2</samp> i se atribuie caracterul '<samp>d</samp>'. <br />
+								4.Să considerăm următoarea declarație de variabile: <br />
+								<script src="https://gist.github.com/Andreea516/26f85615db1f39d8974801332feed219.js"></script>
+								&nbsp &nbsp &nbsp  Să presupunem că de la tastatură se introduce: <samp>3=1+2</samp>. Apelând funcția:<br />
+								<script src="https://gist.github.com/Andreea516/836ce81fb3baed73a86b68722ba3d0ff.js"></script>
+								variabilei <samp>a</samp> i se atribue valoarea <samp>3</samp>, variabilei <samp>b</samp> i se atribuie valoarea <samp>1</samp>, iar variabilei <samp>c</samp> i se atribuie valoarea <samp>2</samp>.<br />
+								Apelând funcția: <br />
+								<script src="https://gist.github.com/Andreea516/be61aae32340062101e8e577c3ba972e.js"></script>
+								variabilei <samp>a</samp> i se taribuie valoarea <samp>3</samp>, iar variabilei <samp>b</samp> i se atribuie valoarea <samp>2</samP> Valoarea <samp>1</samp> a fost citită, dar nu a fost atribuită nici unei variabile.<br />
+								5. Să presupunem că de la tastatură se introduce o dată în formatul  <samp>zz-ll-aa</samp>. Pentru a citi ziua, luna și anul putem apela funcția:<br />
+								<script src="https://gist.github.com/Andreea516/1e699a597ba725257933f3eb507a0a8c.js"></script>
+								<br />
+								&nbsp &nbsp &nbsp <b>Citirea caracterelor</b><br />
+								&nbsp &nbsp &nbsp pentru citirea caracterelor au fost elaborate funcții speciale. De exemplu: <br />
+								1.Funcția <samp>getch()</samp> este declarată în fișierul antet <samp>conio.h</samp>. Formatul funcției:<br />
+								<script src="https://gist.github.com/Andreea516/3e10f792c49a9449d97f3a8ef90012fe.js"></script>
+								&nbsp &nbsp &nbsp <i>Efect</i><br />
+								&nbsp &nbsp &nbsp Se citește de la tastatură un caracter. Funcția returnează codul ASCII al caracterului citit. Caracterul citit nu este afișat pe ecran.<br />
+								2.Funcția <samp>getche</samp> este declarată în fișierul antet <samp>conio.h</samp>. Formatul funcției: <br />
+								<script src="https://gist.github.com/Andreea516/6ff6b1a32e4ad04e980245f0d4ce024c.js"></script>
+								&nbsp &nbsp &nbsp <i>Efect</i><br />
+								&nbsp &nbsp &nbsp Se citește de la tastatură un caracter. Funcția returnează codul ASCII al caracterului citit. Caracterul tastat este afișat pe ecran.<br />
+								<br />
+								&nbsp &nbsp &nbsp <b>Afișarea datelor cu format</b><br />
+								&nbsp &nbsp &nbsp Afișarea datelor pe acran cu un format specificat se realizează apelând funcția <samp>printf()</samp>. Această funcție este declarată în fișierul antet <samp>stdio.h</samp> și are următoarea sintaxă:<br />
+								<script src="https://gist.github.com/Andreea516/f6e84c547d7283da70517d91805903e0.js"></script>
+								&nbsp &nbsp &nbsp <i>Efect</i><br />
+								&nbsp &nbsp &nbsp Se evaluează expresiile și se scriu în ordine valorile acestora, în forma specificată de parametrul <samp>format</samp><br />
+								&nbsp &nbsp &nbsp În caz de succes, funcția returnează numărul de caractere afișate.<br />
+								&nbsp &nbsp &nbsp Parametrul <samp>format</samp> este un și de caractere care poate conține specificatori de format și, eventual, alte caractere. În parametru format trebuie să existe câte un specificator de format pentru fiecare expresie din lista de parametri (specificatorul 1 corespunde expresiei 1, specificatorul 2 corespunde expresiei 2 etc).<br />
+								&nbsp &nbsp &nbsp Celelalte caractere vor fi afișate pe ecran în pozițiile corespunzătoare. <br />
+								&nbsp &nbsp &nbsp Un specificator de format are următoarea sintaxă:<br />
+								<script src="https://gist.github.com/Andreea516/45b5c27427608519509e88583c184ae6.js"></script>
+								&nbsp &nbsp &nbsp Observați că un specificator de format începe cu caracterul <samp>%</samp>, trebuie să conțină obligatori o literă care să indice tipul expresiei corespunzătoare și, eventual, alte elemente opționale. Litera care indică tipul poate fi, de exemplu:<br />
+								<br />
+								<table border="2px" style="text-align:center;">
+                                    <tr><th width="15%">Literă_tip</th><th>Semnificație</th></tr>
+                                    <tr><td>d</td><td>Expresia se convertește din tipul <samp>int</samp> și se afișează în baza 10.</td></tr>
+									<tr><td>o</td><td>Expresia se convertește din tipul <samp>int</samp> și se afișează în baza 8.</td></tr>
+									<tr><td>u</td><td>Expresia se convertește din tipul <samp>unsigned</samp> și se afișează în baza 10.</td></tr>
+									<tr><td>x, X</td><td>Expresia se convertește din tipul <samp>int</samp> și se afișează în baza 16 (literele carereprezintă 10, 11, 12, 13, 14, 15 sunt majuscule pentru <samp>X</samp> sau minuscule pentru <samp>x</samp>.</td></tr>
+									<tr><td>f</td><td>Expresia se convertește din tipul <samp>float</samp> și se afișează în formatul <samp>parte_intreaga.parte_zecimala</samp>.</td></tr>
+									<tr><td>e<E</td><td>Expresia se convertește din tipul <samp>float</samp> și se afișează în format exponențial(științific) <samp>cifra.parte_zecimala<b>e</b> &plusmn; exponent.<samp> Pentru <samp>E</samp>, litera care precedă exponentul este <b>E</b>.</td></tr>
+									<tr><td>g</td><td>Se aplică una dintre conversiile corespunzătoare literei <samp>f</samp> sau literei <samp>e</samp> (cea care se reprezintă cu număr minim de caractere).</td></tr>
+									<tr><td>c</td><td>Expresia are ca valoare codul ASCII al unui caracter și se afișează caracterul corespunzător.</td></tr>
+									<tr><td>s</td><td>Expresia este un șir de caractere care va fi afișat pe ecran.</td></tr>
+								</table>
+								<br />
+								
+								&nbsp &nbsp &nbsp Opțional, înainte de <samp>litera_tip</samp> poate să apară litera <samp>l</samp>. dacă litera <samp>l</samp> apare Înainte de <samp> d, o, x, X </samp>sau <samp>u</samp>, conversia se realizează din tipul <samp>long int</samp> (respectiv <samp>unsigned long int</samp>). Dacă litera <samp>l</samp> apare înainte de de <samp>f, e, E</samp> sau <samp>g</samp>, conversia se realizează din tipul <samp>double</samp>. Litera <samp>L</samp> poate să preceadă doar literele <samp>f,e,E</samp> sau <samp>g</samp> (caz în care conversia se realizează din tipul <samp>long double</samp>).<br />
+								&nbsp &nbsp &nbsp Opțional, poate fi specificat <samp>lg</samp> - numărul minim de caractere pe care se va realiza afișarea. Dacă numărul de caractere necesar pentru a afișa valoarea expresiei depășește <samp>lg</samp>, se vor utiliza atâtea caractere câte sunt necesare. Dacă numărul de caractere necesare pentru a afișa valoarea expresie este mai mic decât <samp>lg</samp>, se vor utiliza  <samp>lg</samp> caractere (restul zonei pe care se realizează afișarea completându-se cu spații). Modul de aliniere implicit este la dreapta (deci completarea cu spații se realizează în stânga). Dacă se specifică indicatorul <samp>-</samp> (minus), atunci alinierea se va face  la stânga (și completarea cu spații se va face la dreapta). <br />
+								&nbsp &nbsp &nbsp Pentru expresiile de tip real sau șir de caractere se poate specifica și precizia <samp>prec</samp>. Pentru valorile reale, aceasta indică numărul de cifre de la partea zecimală care vor fi afișate (implicit 6 zecimale). Dacă precizia este mai mică decât numărul de zecimale ale numărului real afișat, atunci valoarea afișată va fi rotunjită (dacă prima zecimală care nu se afișează este mai mare sau ageală cu 5, atunci ultima zecimală afișată va fi mai mare cu 1). <br />
+								&nbsp &nbsp &nbsp Pentru șiruri de caractere, precizia indică numărul de caractere din șir care se afișează (primele <samp>prec</samp>)<br />
+								<br />
+								&nbsp &nbsp &nbsp <i>Exemple</i><br />
+								&nbsp &nbsp &nbsp Să considerăm următoarele declarații de variabile:<br />
+								<script src="https://gist.github.com/Andreea516/0267217fc78f24b6e6048472c907b47a.js"></script>
+								&nbsp &nbsp &nbsp Să urmărim efectul următoarelor apeluri ale funcției <samp>printf()</samp>:<br /><br />
+								<table border="2px" style="text-align:center;">
+                                    <tr><th width="60%">Apel</th><th>Pe ecran se afișează</th></tr>
+                                    <tr><td><samp>printf("a=%d sau a=%u\n", a, a);</samp></td><td><samp>a=-1 sau a=65535</samp></td></tr>
+									<tr><td><samp>printf("x=%f sau\n x=%e sau\n x=%g\n", x, x, x);</samp></td><td><samp>x=-123.147000 sau x=-1.231470e+02 sau x=-123.147</samp></td></tr>
+									<tr><td><samp>printf("y=%f sau\n y=%e sau\n y=%g\n", y, y, y);</samp></td><td><samp>y=0.000080 sau y=8.000000e-05 sau y=8e-05</samp></td></tr>
+									<tr><td><samp>printf("b=%d sau b=%o sau b=%x\n", b, b, b);</samp></td><td><samp>b=375 sau b=567 sau b=177</samp></td></tr>
+									<tr><td><samp>printf("c=%c sau C=%d\n", c, c);</samp></td><td><samp>c=x sau c=120</samp></td></tr>
+									<tr><td><samp>printf("d=%d sau d+%x sau\n s=%u\n", d, d, d);</samp></td><td><samp>d=-4070 sau d=f01a sau d=61466</samp></td></tr>
+									<tr><td><samp>printf("x=%.2f\n",x);</samp></td><td><samp>x=-123.15</samp></td></tr>
+									<tr><td><samp>printf("b=%6dxb=%-6dx\n", b, b);</samp></td><td><samp>375xb=375 x</samp></td></tr>
+								</table>
+								
+								</p>
+							
+							
+							</div>
+
+						</div>
+
+					</div>
+				
+					
+					
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='50px' height='50px'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Căutare binară</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+
+	<header class="header d-flex flex-row">
+
+		<div class="header_content d-flex flex-row align-items-center">
+
+			<!-- Logo -->
+
+			<div class="logo_container">
+
+				<div class="logo">
+
+					<img src="images\logo.png" alt="Logo">
+
+					<span>Bac Is Coming</span>
+
+				</div>
+
+			</div>
+
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>
+				  
+			</span>
+			
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+				<!-- Menu Social -->
+
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 60px">Căutare binară</h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+							
+									<div class="elements">
+									<div class="col-lg-6">
+
+						<!-- Accordions -->
+						<div class="elements_accordions">
+
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#508</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Căuare binară</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Se dă un vector x cu n elemente numere naturale, ordonate crescător, și un vector y cu m elemente, de asemenea numere naturale. Verificați pentru fiecare element al vectorului y dacă apare în x.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=508" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2644</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Clase</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Într-o școală sunt n clase, fiecare având un număr diferit de elevi. Școală primește m pachete cu cărți, fiecare cu un număr diferit de cărți. Pentru ca o clasa să primească un pachet, numărul elevilor din acea clasa trebuie să fie egal cu numărul cărților din pachet. Să se determine câte clase primesc un pachet de cărți.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2644" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2276</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp cb</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Se consideră un șir a[1], a[2], …, a[n] de numere naturale. Se dau și T intervale închise de forma [x, y], cu  x ≤ y. Pentru fiecare din cele T intervale de forma [x, y] trebuie să răspundeți la întrebarea: câte numere din șir aparțin intervalului [x, y]?</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2276" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2239</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Pow2</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Se consideră un șir a[1], a[2],…, a[n] de numere naturale nenule. Să se determine câte perechi de indici (i, j),  1 ≤ i < j ≤ n, există cu proprietatea că suma a[i] + a[j] este egală cu o putere a lui 2.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2239" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#661</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Triunghiuri1</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Se dau n numere naturale distincte. Determinaţi câte triunghiuri distincte pot avea lungimile laturilor printre aceste numere.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=661" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2273</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp ssplit</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Se consideră un șir a[1], a[2], …, a[n] de numere naturale nenule. Pentru doi indici 1 ≤ i < j < n, notăm cu  X = a[1] + a[2] + ... + a[i], Y = a[i+1] + a[i+2] + ... + a[j] și Z = a[j+1] + a[j+2] + ... + a[n]. Să se determine doi indici i și j astfel încât diferența max(X, Y, Z) - min(X, Y, Z) să fie minimă.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2273" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#1594</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Maraton</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">După ce și-a cumpărat biscuiți, Costy, eroul nostru, ajunge acasă și se apucă de teme. Astfel, dă peste următoarea problemă: “La o probă de maraton participă N maratonişti. Ştiind că la secunda 0, un maratonist se află la Xi metri de linia de sosire și aleargă cu o viteză de Yi metri/secundă, să se răspundă la Q întrebări de tipul: - Câți maratonişti au trecut linia de sosire după Qi secunde ? “</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=1594" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#536</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Fabrica1</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">La secția de împachetare a produselor dintr-o fabrică lucrează n muncitori. Fiecare muncitor împachetează același tip de produs, și pentru fiecare se cunoaște timpul necesar pentru împachetarea unui obiect. Să se determine durata minimă de timp în care vor împacheta cei n muncitori cel puțin M obiecte.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=536" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2453</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp Rosii mici</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Dan este un mare pasionat al fructelor, printre preferatele sale fiind strugurii şi pepenii. Însă recent şi-a descoperit și pasiunea pentru legume, în special pentru roşii, dar mai ales roşiile mici. Spre norocul lui, grădina bunicului este plină de roşii. Grădina are forma unei matrice cu N linii și M coloane cu elemente numere naturale, nu neapărat distincte, unde fiecare element din matrice reprezintă dimensiunea unei roşii. Matricea are proprietatea că oricare coloană are valorile ordonate crescător de sus în jos, adică de la prima spre ultima linie. Bunicul său îi cere să rezolve Q sarcini. Pentru fiecare sarcină, Dan primeşte un număr natural x şi trebuie să găsească o submatrice de arie maximă care începe de pe linia 1 a matricei care reprezintă grădina şi are toate elementele mai mici sau egale decât x. Pentru determinarea submatricei cerute, Dan are voie să mute toate valorile unei coloane în fața oricărei alte coloane. De asemenea, îi este permis să facă oricâte mutări de tipul acesta. Să se calculeze aria maximă a unei submatrice care respectă specificațiile din enunț, pentru fiecare din cele Q sarcini date de către bunic.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2453" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							<div class="accordion_container">
+							    <div class="accordion d-flex flex-row align-items-center" style=""><div class="number"><span>#2454</span></div>&nbsp &nbsp &nbsp &nbsp &nbsp brsec</div>
+								<div class="accordion_panel">
+									<p style="font-size: 18px">Fie un vector v sortat crescător cu N elemente naturale nenule distincte pe care nu le cunoaştem, dar pe care ne propunem să le determinăm. Având la dispoziţie acest vector v, cu ajutorul următorului algoritm de căutare binară putem răspunde la queryuri de forma: Dându-se un număr X şi un interval [a, b] se cere să se determine cel mai mic element mai mare decât X aflat în intervalul determinat de indicii a şi b, interval din vectorul v. Se cunosc paşii pe care algoritmul de cautare binară i-a urmat pentru diferite valori ale tripletului (X, a, b). Dându-se N (lungimea vectorului), Q (numărul de query-uri apelate) şi cele Q query-uri, să se determine vectorul iniţial. Dacă există mai multe soluţii se va afişa soluţia minim lexicografică. Dacă nu există soluţie se va afişa valoarea -1.</p>
+									<div class="buttons"><div class="buttons_container"><span><div class="button button_color_1 text-center trans_200"><a href="https://www.pbinfo.ro/?pagina=probleme&id=2454" target="_blank">Rezolvă</a></div></div></span></div>
+							</div>
+							</div>
+							
+							
+							
+							</div>
+							</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<!-- Page Nav -->
+
+					<div class="news_page_nav">
+						<ul>
+							<li class="active text-center trans_200"><a href="pr9_3_6_1.html">01</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+
+	<footer class="footer">
+
+		<div class="container">
+
+
+
+			<!-- Footer Content -->
+
+
+
+			<div class="footer_content">
+
+				<div class="row">
+
+
+
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+
+							<div class="logo">
+
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+
+								<span>Bac is coming</span>
+
+							</div>
+
+						</div>
+
+
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+
+
+					</div>
+
+
+
+					<!-- Footer Column - Menu -->
+
+
+
+					<div class="col-lg-3 footer_col">
+
+						<div class="footer_column_title">Meniu</div>
+
+						<div class="footer_column_content">
+
+							<ul>
+
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+
+								<li class="footer_list_item"><a href="#resurse9.html">Resurse</a></li>
+
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+
+
+					<!-- Footer Column - Usefull Links -->
+
+
+
+					<div class="col-lg-3 footer_col">
+
+						<div class="footer_column_title">Link-uri utile</div>
+
+						<div class="footer_column_content">
+
+							<ul>
+
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+
+
+					<!-- Footer Column - Contact -->
+
+
+
+					<div class="col-lg-3 footer_col">
+
+						<div class="footer_column_title">Contact</div>
+
+						<div class="footer_column_content">
+
+							<ul>
+
+								<li class="footer_contact_item">
+
+									<div class="footer_contact_icon">
+
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+
+									</div>
+
+									Str. Mihai Eminescu, Nr.4, Roman
+
+								</li>
+
+								<li class="footer_contact_item">
+
+									<div class="footer_contact_icon">
+
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+
+									</div>
+
+									0233 740290
+
+								</li>
+
+								<li class="footer_contact_item">
+
+									<div class="footer_contact_icon">
+
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+
+									</div>office@baciscoming.ro
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+
+
+			<!-- Footer Copyright -->
+
+
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+
+				<div class="footer_copyright">
+
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+
+				</div>
+
+				<div class="footer_social ml-sm-auto">
+
+					<ul class="menu_social">
+
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

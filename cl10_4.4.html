@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Legătura dintre pointeri și tablouri</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Tipuri structurate de date</i></h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>23</div>
+										<div>Mar</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Legătura dintre pointeri și tablouri</a>
+									</div>
+								</div>
+							</div>
+							<div class="news_post_text">
+							<p>
+							<div class="news_post_quote">
+								<p class="news_post_quote_text"><span>N</span>umele unui tablou este un <b>pointer constant</b> care are ca valoare adresa primului element din tablou</p>
+							</div>
+							&nbsp &nbsp &nbsp Să considerăm următoarea declarație:<br />
+							<script src="https://gist.github.com/Andreea516/05bf22f5c65af236e311c7a87ea8b990.js"></script>
+							&nbsp &nbsp &nbsp Următoarele expresii sunt echivalente:<br />
+							<script src="https://gist.github.com/Andreea516/cdb9a7b1cbe654c522b78ee259eae800.js"></script>
+							&nbsp &nbsp &nbsp Operațiile cu pointeri reprezintă o alternativă pentru adresarea elementelor unui tablou.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b> Exemplu</b><br />
+							&nbsp &nbsp &nbsp Să considerăm <samp>s</samp> un șir de maxim 100 de caractere. <br />
+							<script src="https://gist.github.com/Andreea516/670e239a63dc650f516023c5219848c7.js"></script>
+							&nbsp &nbsp &nbsp Să determinăm lungimea efectivă a șirului de caractere <samp>s</samp>. Determinarea lungimii unui șir se poate face parcurgând șirul până la întâlnirea marcajului de sfârșit de șir și numărând caracterele parcurse.<br />
+							&nbsp &nbsp &nbsp Pentru a parcurge șirul putem utiliza variabila întreagă <samp>lungime</samp> (care indică poziția curentă în șir, iar la sfârșit lungimea șirului):<br />
+							<script src="https://gist.github.com/Andreea516/501d8abb4888309d93f945682c921fdd.js"></script>
+							&nbsp &nbsp &nbsp Șirul poate fi parcurs și cu ajutorul unui pointer <samp>p</samp> care inițial va avea ca valoare adresa de început a șirului. Pointerul va fi incrementat cât timp valoarea lui nu este adresa zonei de memorie care conține caracterul <samp>NULL</samp>. Lungimea șirului este diferența dintre valoarea pointerului <samp>p</samp> (care indică la sfârșit adresa caracterului <samp>NULL</samp>) și valoarea pointerului <samp>s</samp> (care indică adresa primului caracter din șir).<br />
+							<script src="https://gist.github.com/Andreea516/2ce9dbbbe783310fa9cd9803601d4949.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Observații</b><br />
+							1.Acum putem explica de ce atribuirea <samp>a=b</samp> produce mesajul de eroare „Value required” atunci când încercăm să atribuim unui tablou <samp>a</samp> tabloul <samp>b</samp>: membrul stâng al acestei atribuiri este un pointer constant. Această atribuire este tentativă de a modifica un pointer constant (încercăm să atribuim pointerului constant <samp>a</samp> valoarea pointerului <samp>b</samp>).<br />
+							2.O matrice este un vector de vectori, deci numele său este un pointer la prima linie din matrice. Să considerăm următoarea declarație:<br />
+							<script src="https://gist.github.com/Andreea516/10fc2187b1c9be62f34fafe4fbbebfc8.js"></script>
+							&nbsp &nbsp &nbsp Următoarele expresii sunt echivalente:<br />
+							<script src="https://gist.github.com/Andreea516/47774e3adcea6aedcc37250e3f484277.js"></script>
+							<br />
+							<h2>&nbsp &nbsp &nbsp Utilizarea funcțiilor standard de lucru cu șiruri de caractere</h2>
+							&nbsp &nbsp &nbsp În fișierul antent <samp>cstring</samp> sunt declarate numeroase funcții de lucru cu șiruri de caractere.<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Determinarea lungimii efective a unui șir de caractere</h3>
+							&nbsp &nbsp &nbsp În secțiunea precedentă am determinat lungimea efectivă a unui șir de caractere parcurgând șirul până la întâlnirea caracterului <samp>NULL</samp>. O variantă mai simpla este de a apela funcția <samp>strlen()</samp>. Prototipul acestei funcții este:<br />
+                            <script src="https://gist.github.com/Andreea516/fdd183ee5184e6903f838b55e107a18f.js"></script>							
+							&nbsp &nbsp &nbsp Apelul <samp>strlen(s)</samp> returnează lungimea șirului <samp>s</samp>.<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Copierea unui șir de caractere într-un alt șir de caractere</h3>
+							&nbsp &nbsp &nbsp Copierea unui șir de caractere (denumit <samp>sursa</samp>) într-un alt șir de caractere (denumit <samp>destinatia</samp>) se poate realiza cu ajutorul funcției <samp>strcpy()</samp>. Prototipul funcției <samp>strcpy()</samp> este:<br />
+							<script src="https://gist.github.com/Andreea516/a0671fe9e0032ee10b79493499bcf34a.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strcpy(destinatie, sursa)</samp> copiază șirul <samp>sursa</samp>, caracter cu caracter, în șirul <samp>destinatie</samp>, până după copierea caracterului <samp>NULL</samp> și returnează adresa de început a șirului <samp>destinatie</samp>.<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/16b4158db83c910328e2ece56211a271.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Exercițiu</b><br />
+							&nbsp &nbsp &nbsp Scrieți o secvență echivalentă care să utilizeze pointeri pentru parcurgerea șirurilor.<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Spațiul de memorie alocat șirului <samp>destinatie</samp> trebuie să fie suficient de mare pentru a memora caracterele șirului <samp>sursa</samp>.<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Copierea unui prefix al unui șir de caractere</h3>
+							&nbsp &nbsp &nbsp Pentru a copia primele <samp>n</samp> caractere din șirul de caractere <samp>sursa</samp> în șirul de caractere <samp>destinatie</samp> se poate utiliza funcția <samp>strncpy()</samp>. Prototipul funcției <samp>strncpy()</samp> este:<br />
+							<script src="https://gist.github.com/Andreea516/a947bbdab2d1ae67c56f2dea89f23756.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strncpy(destinatie,sursa,n)</samp> are ca efect copierea primelor maxim <samp>n</samp> caractere din șirul <samp>sursa</samp> în șirul <samp>destinatie</samp> și retutnează adresa de început a șirului <samp>destinatie</samp>. dacă lungimea șirului <samp>sursa</samp> este mai mică decât <samp>n</samp>, se copiază întreg șirul <samp>sursa</samp> în șirul <samp>destinatie</samp> și la sfârșitul șirului <samp>destinatie</samp> se plasează caracterul <samp>NULL</samp>. Dacă lungimea șirului <samp>sursa</samp> este mai mare sau egală cu <samp>n</samp>, atunci la sfârșitul șirului <samp>destinatie</samp> nu va fi plasat caracterul <samp>NULL</samp>.<br />							
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu urnmătoarea secvență de intrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/d6fe5b1fe70cc9a3495624ba6e8dfe4c.js"></script>
+							<br /><br />
+							<h3>&nbsp &nbsp &nbsp Concatenarea a două șiruri de caractere</h3>
+							&nbsp &nbsp &nbsp Pentru a concatena șirul de caractere <samp>destinatie</samp> cu șirul de caractere <samp>sursa</samp> se utilizează funcția <samp>strcat()</samp>. Prototipul funcției <samp>strcat()</samp> este:<br />
+							<script src="https://gist.github.com/Andreea516/a721072f31bef1f8c5c0a5a3ed146e23.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strcat(destinatie, sursa)</samp> copiază caracterele șirului <samp>sursa</samp> la sfârșitul șirului <samp>destinatie</samp> și returnează adresa de început a șirului obținut după concatenare (<samp>destinatie</samp>).<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/bdfb469ae6d61b8b4c2ee2f86b103df1.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Zona de memorare alocată șirului <samp>destinatie</samp> trebuie să fie suficient de mare pentru a reține rezultatul concatenării. <br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Concatenarea unui șir de caractere cu un prefix al altui șir de caractere</h3>
+							&nbsp &nbsp &nbsp Pentru a concatena primele <samp>n</samp> caractere din șirul de caractere <samp>sursa</samp> la șirul de caractere <samp>destinatie</samp> se poate utiliza funcția <samp>strncat()</samp>. Prototipul funcției <samp>strncat()</samp> este:<br />
+							<script src="https://gist.github.com/Andreea516/53acd33c535f13d3068b27a2c45bdf33.js"></script>
+							&nbsp &nbsp &nbsp  Apelul <samp>strncat(destinatie,sursa,n)</samP> are ca efct copierea primelor maxim <samp>n</samp> caractere din șirul <samp>sursa</samp> la sfârșitul șirului <samp>destinatie</samp> și returnează adresa de început a șirului <samp>destinatie</samp>. Dacă lungimea șirului <samp>sursa</samp> este mai mic decât <samp>n</samp>, se concatenează întreg șirul <samp>sursa</samp> la șirul <samp>destinatie</samp>. La sfârșitul șirului obținut în urma concatenării se plasează caracterul <samp>NULL</samp>.<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:
+							<script src="https://gist.github.com/Andreea516/b88a93baac8c69671318df0fb2a00682.js"></script>
+							<br />
+					        <br />
+							<h3>&nbsp &nbsp &nbsp Compararea a două șiruri de caractere</h3>
+							&nbsp &nbsp &nbsp Pentru a compara două șiruri de caractere se poate utiliza funcția <samp>strcmp()</samp>. Prototipul acestei funcții este:<br />
+							<script src="https://gist.github.com/Andreea516/b8d676445f8a0e4367144729bdc52ecb.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strcmp(s1,s2)</samp> compară din punct de vedere lexicografic șirul de caractere <samp>s1</samp> cu șirul de caractere <samp>s2</samp> și returnează o valoare:<br />							
+                            • <samp>< 0</samp>, dacă <samp>s1<</samp><samp>s2</samp> (în ordine lexicografică, ordinea cuvintelor din dicționar);<br />							
+                            • <samp>==0</samp>, dacă <samp>s1==s2</samp> (<samp>s1</samp> și <samp>s2</samp> sunt egale);<br />
+							• <samp>> 0</samp>, dacă <samp>s1>s2</samp> (în ordine lexicografică).<br />		
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Spunem că șirul <samp>s1</samp> precedă din punct de vedere lexicografic șirul <samp>s2</samp> dacă există un număr natural <samp>n≤strlen(s1)</samp>, astfel încât <samp>s1[i]==s2[i]</samp> pentru orice <samp>0≤i<</samp><samp>n</samp> și <samp>s1[n]<</samp><samp>s2[n]</samp>.<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/4f46e2fb2f7fc477b65806c7143cff3b.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Utilizând funcția <samp>strcmp()</samp>, la comparare se face distincție între literele mari și literele mici. Dacă dorim o comparare care să nu facă distincție între majuscule și minuscule (<i>case sensitive</i>), putem utiliza funcția <samp>stricmp()</samp>:<br />
+							<script src="https://gist.github.com/Andreea516/f702e8f225f86edabac0ddd3bf097157.js"></script>
+							<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Căutarea primei apariții a unui caracter într-un șir</h3>
+							&nbsp &nbsp &nbsp Pentru a căuta prima apariție a unui caracter într-un șir se poate utiliza funcția <samp>strchr()</samp>. Prototipul acestei funcții este:<br />
+							<script src="https://gist.github.com/Andreea516/58f281d3485e8ec2bcabd15a33266a9e.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strchr(s,c)</samp> caută prima apariție a caracterului <samp>c</samp> în șirul <samp>s</samp> și returnează un pointer care are ca valoare adresa primului caracter din șir egal cu <samp>c</samp> 9dacă un astfel de caracter există) sau <samp>NULL</samp> (dacă în <samp>s</samp> caracterul <samp>c</samp> nu apare).<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/3764b824f79f4280fa62fc857c48ce9f.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Exercițiu</b><br />
+							&nbsp &nbsp &nbsp Rescrieți această secvență de instrucțiuni utilizând indici pentru parcurgerea șirului <samp>s</samp>.
+							<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Căutarea primei apariții a unui șir într-un alt șir</h3>
+							&nbsp &nbsp &nbsp Pentru a căuta prima apariție a unui șir în alt șir se poate utiliza funcția <samp>strstr()</samp>. Prototipul acestei funcții este:<br />
+							<script src="https://gist.github.com/Andreea516/318474deb4114d1cb3c91da6c3d1de54.js"></script>
+							&nbsp &nbsp &nbsp Apelul <samp>strstr(s1,s2)</samp> determină prima apariție a șirului <samp>s2</samp> în șirul <samp>s1</samp> și returnează un pointer către începutul primei apariții a lui <samp>s2</samp> în <samp>s1</samp> sau <samp>NULL</samp> (dacă <samp>s2</samp> nu apare în <samp>s2</samp>).<br />
+							&nbsp &nbsp &nbsp Efectul acestui apel este echivalent cu următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/66d497808df20286bb7ed809567d1c3c.js"></script>
+							<br />
+						    <br />
+							<h3>&nbsp &nbsp &nbsp Transformări între litere mici și litere mari</h3>
+							&nbsp &nbsp &nbsp Pentru a transforma toate literele mari dintr-un șir în litere mici se poate utiliza funcția <samp>strlwr()</samp>. Prototipul acestei funcții:
+							<script src="https://gist.github.com/Andreea516/9677534d3a5382fe15397d3c1b1f72cf.js"></script>
+							&nbsp &nbsp &nbsp Pentru a transforma toate literele mici dintr-un șir în litere mari se poate utiliza funcția <samp>strupr()</samp>. Prototipul acestei funcții:
+							<script src="https://gist.github.com/Andreea516/f7beb2cdfe43430eb25c13dbf38ddfdd.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Exercițiu</b><br />
+							&nbsp &nbsp &nbsp Scrieți câte o instrucțiune care să aibă un efect echivalent cu funcția <samp>strlwr()</samp>, respectiv cu <samp>strupr()</samp>.<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Separarea unităților lexicale dintr-un șir de caractere</h3>
+							&nbsp &nbsp &nbsp Numim unitate exicală o secvență de caractere din șir delimitată de separatori. Separatorii depind de problema concretă și sunt memorați într-un șir de caractere (pe care l-am denumit <samp>separatori</samp>).<br />
+							&nbsp &nbsp &nbsp Funcția <samp>strtok()</samp> permite extragerea succesivă a unităților lexicale dintr-un șir de caractere. Prototipul acestei funcții este:<br />
+							<script src="https://gist.github.com/Andreea516/aa5d7dfa3435927d8e1d552631582bed.js"></script>
+							&nbsp &nbsp &nbsp referitor la modul de apel, această funcție este mai specială. Prima dată vom apela funcția sub forma:<br />
+							<script src="https://gist.github.com/Andreea516/f2124fca5a9b040882651af16367be18.js"></script>
+							&nbsp &nbsp &nbsp După primul apel, funcția va returna adresa de început a primei unități lexicale și șirul <samp>s</samp>. După acest prim apel, șirul <samp>s</samp> este modificat (primul deparator de după prima unitate lexicală este înlocuit cu caracterul <samp>NULL</samp>. Dacă șirul <samp>s</samp> este vid sau conține numai separatori, atunci funcția returnează <samp>NULL</samp>.<br />
+							&nbsp &nbsp &nbsp Pentru a extrage succesiv și celelalte unități lexicale din șirul <samp>s</samp> putem apela din nou funcția <samp>strtok()</samp>, dar de data aceasta primul parametru trebuie să fie <samp>NULL</samp> (altfel, funcția returnează tot prima unitate lexicală din <samp>s</samp>):<br />
+							<script src="https://gist.github.com/Andreea516/15bfe296cf6227a4ef116ff876e211c3.js"></script>
+							&nbsp &nbsp &nbsp Acest apel returnează adresa de început a următoarei unități lexicale și șirul <samp>s</samp> (sau <samp>NULL</samp>, dacă în șirul <samp>s</samp> nu mai există unități lexicale). După fiecare apel, primul separator de după unitatea lexicală identificată este înlocuit cu caracterul <samp>NULL</samp>.<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							&nbsp &nbsp &nbsp Să considerăm următoarele șiruri:<br />
+							<script src="https://gist.github.com/Andreea516/06c3438ad55d118c593c653cbfd271ed.js"></script>
+							&nbsp &nbsp &nbsp La primul apel:<br />
+							<script src="https://gist.github.com/Andreea516/ade04087f8bac09ddf3f6cfc6fc87294.js"></script>
+							variabile <samp>p</samp> i se atribuie adresa de început a primei unități lexicale (<samp>Vai</samp>), iar caracterul separator '<samp>,</samp> de pe poziția 4 este înlocuit cu caracterul <samp>NULL</samp>. Dacă vom afișa șirul a cărei adresă de început este memorată în <samp>p</samp>:<br />
+							<script src="https://gist.github.com/Andreea516/3786541cd26c96637f78d317c189e1cd.js"></script>
+							vom obține pe ecran unitatea lexicală:<br />
+							<script src="https://gist.github.com/Andreea516/97d7c12d447164e3ae14a475f654a6c0.js"></script>
+							&nbsp &nbsp &nbsp La al doilea apel:<br />
+							<script src="https://gist.github.com/Andreea516/33da28752b4a8f3936662e7b674d3bff.js"></script>
+							variabilei <samp>p</samp> i se atribuie adresa de început a celei de-a doua unități lexicale (<samp>vai</samp>), iar caracterul separator '<samp>!</samp>' este înlocuit de <samp>NULL</samp>.<br />
+							&nbsp &nbsp &nbsp La al treilea apel:<br />
+							<script src="https://gist.github.com/Andreea516/33da28752b4a8f3936662e7b674d3bff.js"></script>
+							variabilei <samp>p</samp> i se atribuie adresa de început a celei de-a treia unități lexicale (<samp>Ce</samp>), iar caracterul separator '<samp> </samp>' este înlocuit de <samp>NULL</samp>.<br />
+							&nbsp &nbsp &nbsp Pentru a extrage toate unitățile lexicale din șirul <samp>s</samp> separate de caractere din șirul de separatori <samp>sep</samp> putem utiliza următoarea secvență de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/919026dce58f2acbb47271e25e80bf28.js"></script>
+							&nbsp &nbsp &nbsp În urma execuției acestei secvențe de instrucțiuni pentru șirurile declarate anterior, vom obține pe ecran:<br />
+							<script src="https://gist.github.com/Andreea516/358d7d73905e90bd2440630e4032c83a.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Obsevație</b><br />
+							&nbsp &nbsp &nbsp De la un apel la altul, șirul de separatori se poate modifica. De exemplu, să considerăm că în șirul <samp>s</samp> este memorată o relație de forma:<br />
+							<script src="https://gist.github.com/Andreea516/b18cda0795add2e25513967eb2276315.js"></script>
+							unde operatorul poate fi '<samp>+</samp>', '<samp>-</samp>', '<samp>*</samp>' sau '<samp>/</samp>'.<br />
+							&nbsp &nbsp &nbsp Pentru a extrage cele trei unități lexicale (<samp>rezultat, operand_1 și operand_2</samp>) putem proceda astfel:<br />
+							<script src="https://gist.github.com/Andreea516/f2f240f743ec6c804b33c26e654cfd24.js"></script><
+							<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Funcții de conversie</h3>
+							&nbsp &nbsp &nbsp În fișierul antet <samp>cstdlib</samp> sunt declarate funcții care permit conversia unui număr întreg într-un șir de caractere:<br />
+							<script src="https://gist.github.com/Andreea516/6eb2ae7d17f99781f1de5ee2e49c0a82.js"></script>
+							&nbsp &nbsp &nbsp Funcția <samp>itoa()</samp> convertește un număr de tip <samp>int</samp>, funcția <samp>ltoa()</samp> convertește un număr de tip <samp>long</samp>, iar funcția <samp>ultoa()</samp> convertește un număr de tip <samp>unsigned long</samp>. Șirul de caractere <samp>sir</samp> va conține reprezentarea numărului <samp>nr</samp> în baza de numerație <samp>baza(2≤baza≤36)</samp>. <br />
+							<br>
+							&nbsp &nbsp &nbsp <b>Exercițiu</b><br />
+							&nbsp &nbsp &nbsp În fișierul antet <samp>cstdlib</samp> sunt declarate funcții care realizează și conversia în sens invers (din șir de caractere în valoare numerică) - <samp>atoi(), atol(), atof(), strtod(), _strtold(), strtol(), strtoul()</samp>. Studiați aceste funcții utilizând sistemul de autodocumentare (<i>Help</i>).
+							</p>
+							</div>
+						</div>
+
+					</div>
+				
+
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

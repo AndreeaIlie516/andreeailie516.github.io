@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Algoritmi de sortare</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Metoda <i>Divide et impera</i></h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>12</div>
+										<div>Mar</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Algoritmi de sortare</a>
+									</div>
+								</div>
+							</div>
+							<div class="news_post_text">
+							<p>
+							&nbsp &nbsp &nbsp Fie <samp>n (n∈ℕ*) </samp> elemente <samp>a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub></samp>. Ordonați crescător elementele <samp>a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub></samp>.<br />
+							&nbsp &nbsp &nbsp <b>Ordonarea</b> (denimită ân termeni de specialitate și <b>sortare</b>) este o problemă care apare frecvent în practică, în orice domeniu de acivitate. Cum, de obicei, numărul de elemente care trebuie ordonate este mare, iar rezultatele trebuie obținute în timp scurt, această problemă a constituit un subiect de studiu important în informatică. Ca urmare, la ora actuală există zeci de algoritmi de sortare.<br />
+							&nbsp &nbsp &nbsp Elevii pun de obicei întrebarea: „Unul nu e suficient? Am învățat deja cel puțin trei algoritmi de sortare: <i>Bubble Sort</i>, sortarea prin selecție și sortarea prin inserție!”.<br />
+							&nbsp &nbsp &nbsp Algoritmii de sortare învățați până acum aveau avantajul simplității. Din păcate, asta nu înseamnă în mod necesar și eficient.<br />
+							&nbsp &nbsp &nbsp Analiza performanțelor unui algoritm se face după două criterii:<br />
+							•Dimensiunea <b>spațiului de memorie</b> necesar. Un program necesită:<br />
+							-<b>un spațiu de memorie constant</b>, independent de datele de intrare, pentru memorarea codului său, a constantelor, a variabilelor simple și a structurilor de date alocate static;<br />
+							-<b>un spațiu de memorie valabil</b>, a cărui dimensiune depinde adesea de datele de intrare, constând din spațiul necesar pentru structurile de date alocate dinamic, a căror dimensiune depinde de instanța problemei de rezolvat și din spațiul de memorare necesar apelurilor de proceduri și funcții.<br />
+							&nbsp &nbsp &nbsp Progresele tehnologice fac ca importanța criteriului spațiului de memorie utilizat să scadă, prioritar devenind criteriul timplui.<br />
+							•<b>Timpul de execuție</b>. Determinarea timpului de execuție nu se poate face prin rularea programului chiar de un număr mare de ori, deoarece nu am obține informații decât despre timpul de execuție a programului pe anumite seturi particulare de  date de intrare. În plus, ar interveni și performanțele sistemului de calcul pe care rulăm programul. Aceste argumente ne conduc la ideea că determinarea timpului de execuție trebuie făcută printr-o analiză teoretică. Pentru a analiza teoretic algoritmul , vom presupune că se lucrează pe un calculator „clasic”, în sensul că o singură instrucțiune este executată la un moment dat. Astfel, timpul necesar execuției programului depinde de numărul de operații elementare (operații al căror timp de execuție este constant, independent de datele de intrare ale problemei) efectuate de algoritm. Privind din perspectiva calculului paralel, acest mod de analiză a complexității-timp a unui algoritm va fi, probabil, total inadecvat pentru viitoarele generații de calculatoare . Dar pentru algoritmii „clasici” oferă un criteriu general de comparație, fără a fi necesară implementarea și rularea pe un calculator.<br />
+							<br />
+							&nbsp &nbsp &nbsp Timpul necesar execuției unei operații elementare poate fi diferit de la o operație la alta, dar este fixat, deci putem spune că operațiile elementare au timpul mărginit superior de o constantă. Fără a restrânge generalitatea, vom presupune că toate operațiile elementare au același timp de execuție, fiind astfel necesară doar evaluarea numărului de operații elementare, nu și timpul total de execuție a acestora. Analiza teoretică ignoră toți factorii care depind de mașină sau de limbajul de programare ales și se axează doar pe determinarea ordinului de mărime a numărului de operații elementare. <br />
+							&nbsp &nbsp &nbsp Scopul analizei teoretice a algoritmilor este de fapt determinarea unor funcții care să limiteze superior, respectiv inferior comportarea în timp a algoritmului.<br />
+							&nbsp &nbsp &nbsp Să evaluăm, de exemplu, numărul de operații elementare efectuate de algoritmul de sortare prin <i>selecția maximului</i>, în funcție de <samp>n</samp>, numărul de elemente din vectorul care trebuie sortat:<br />
+							<script src="https://gist.github.com/Andreea516/3256c05aa962b6bbed959218ada146da.js"></script>
+							&nbsp &nbsp &nbsp La fiecare iterație a ciclului <samp>for</samp> exterior este calculat <samp>max{a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>dr</sub>}</samp> și plasat pe poziția <samp>dr+1</samp> la <samp>n</samp> fiind deja plasate pe pozițiile lor definitive. Pentru a calcula <samp>max{a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>dr</sub>}</samp> sunt necesare <samp>dr</samp> operații elementare , în total <samp>1+2+..+n-1=n*(n-1)/2</samp>. Deci numărul de operații elementare executate de algoritmul de sortare prin selectarea maximului este de <samp>n*(n-1)/2</samp>, independent de ordinea inițială a elementelor vectorului. <br />
+							&nbsp &nbsp &nbsp În cazul algoritmului de <i>sortare prin inserție</i>, numărul de operații elementare executate de algoritm depinde de datele de intrare.<br />
+							<script src="https://gist.github.com/Andreea516/27bb560dec8171b32a985915f4378883.js"></script>
+							&nbsp &nbsp &nbsp La fiecare iterație a ciclului <samp>for</samp>, elementele <samp>a<sub>1</sub>, a<sub>2</sub>,..., a<sub>i-1</sub></samp> sunt deja ordonate și trebuie să inserăm valoarea <samp>a[i]</samp> pe poziția corectă în șirul ordonat. În cazul cel mai defavorabil, când vectorul este inițial ordonat descrescător, fiecare element <samp>a[i]</samp> va fi plasat pe prima poziție, deci cilul <samp>for</samp> interior se execută de <samp>i-1</samp> ori. Considerând drept operație elementară comparația <samp>a[poz-1]>v</samp>, urmată de deplasarea elementului de pe poziția <samp>poz-1</samp>, vom avea, în cazul cel mai defavorabil, <samp>1+2+...+n-1=n*(n-1)/2</samp> operații elementare.<br />
+							&nbsp &nbsp &nbsp Să analizăm acum comportarea algoritmului <i>în medie</i>. Pentru aceasta, vom considera că elementele vectorului sunt distincte și că orice permutare a lor are aceeași probabilitate de apariție. Atunci probabilitatea ca valoarea <samp>a<sub>i-1</sub></samp> să fie plasată pe poziția <samp>k</samp> în șirul <samp>a<sub>1</sub>, a<sub>2</sub>,..., a<sub>i-1</sub></samp>, k∈{1, 2, ..., i-1}</samp>, este </samp>1/i</samp>. Numărul mediu de operații elementare, pentru <samp>i</samp> fixat, este:<br />
+							&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img src="images\suma1.png" width="500px"><br />
+							&nbsp &nbsp &nbsp Numărul de operații elementare necesare în medie pentru a sorta <samp>n</samp> elemente prin algoritmul de sortare prin inserție este:<br />
+							&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img src="images\suma2.png" width="600px"><br />
+							</p>
+							</div>
+
+						</div>
+
+					</div>
+				
+
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

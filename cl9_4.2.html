@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Fișiere text în limbajul C++</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Fișiere</h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>2</div>
+										<div>ian</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Fișiere text în limbajul C++</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="news_post_text">
+							<p>
+							<h2>Declararea fișierelor</h2>
+							&nbsp &nbsp &nbsp Operațiile de intrare/ieșire în limbajul C++ au utilizat până acum <i>stream</i>-urile <samp>cin</samp> și <samp>cout</samp>, care erau automat asociate tastaturii, respectiv ecranului. Pentru ca un program să poată citi informații dinstr-un fișier, rspectiv să scrie informații într-un fișier, trebuie să asociem fișierul respectiv unui <i>stream</i> de intrare/ieșire. <br />
+							&nbsp &nbsp &nbsp În fișierul antet <samp>fstream.h</samp> sunt declarate clasele <samp>ifstream, ofstream</samp> și <samp>fstream</samp><sup>1</sup>. pentru a utiliza într-un program operații de intrare/ieșire folosind fișiere trebuie să declarăm variabile de tipurile <samp>ifstream, ofstream</samp> sau <samp>fstream</samp>. Mai exact:<br />
+							&nbsp &nbsp &nbsp <samp>ifstream</samp> - declarare <i>stream</i> de intrare (numai pentru operații de citire);<br />
+							&nbsp &nbsp &nbsp <samp>ofstream</samp> - declarare <i>stream</i> de ieșire (numai pentru operații de scriere); <br />
+							&nbsp &nbsp &nbsp <samp>fstream</samp>  - declarare <i>stream</i> de intrare/ieșire (în care se pot realiza atât operații de citire, cât și operații de scriere, în funcție de modul specificat la deschidere).<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemple</b><br />
+							<script src="https://gist.github.com/Andreea516/184223c5cf6243fab888b5ac61c1cceb.js"></script>
+							&nbsp &nbsp &nbsp <b>Observații</b><br />
+							1. Declarațiile precedente respectă sintaxa declarațiilor de variabile (<samp>ifstream/ofstream/fstream</samp> reprezintă tipul, iar <samp>f1, f2, f3</samp> reprezintă numele variabilelor). Tipul fiind o clasă, variabilele <samp>f1, f2, f3</samp> sunt obiecte.<br />
+							2. Nu intrăm în amănunte referitoare la programarea orientată pe obiect, dar trebuie să precizăm că o clasă este asemănătoare tipului <samp>struct</samp>, dar clasa conține atât date, cât și funcțiile necesare prelucrării acestora. Datele și funcțiile incluse întro clasă se numesc obiecte. Pentru a ne referi la un membru al unui obiect utilizăm operatorul punct, denumit operator de selecție directă: <samp>nume_obiect.nume_membru.</samp><br />
+							<br />
+							&nbsp &nbsp &nbsp <h2>Deschiderea fișierelor</h2>
+							&nbsp &nbsp &nbsp Pentru a utiliza <i>stream</i>-ul declarat trebuie să îl deschidem. La deschidere, se asociază <i>stream</i>-ului un fișier fizic (existent pe suport extern) și, eventual, se precizează modul de deschidere, care determină operațiile permise cu fișierul respectiv. Deschiderea se poate realiza în două moduri:<br />
+							&nbsp &nbsp &nbsp -după declarare, prin apelul funcției membră <samp>open</samp>, precizând ca parametrii un șir de caractere, care reprezintă specificatorul fișierului fizic, conform sintaxei sistemului de operare utilizat, și (eventual) modul de deschidere;<br />
+							&nbsp &nbsp &nbsp -la declarare, specificând după numele <i>stream</i>-ului care se declară numai parametrii corespunzători funcției <samp>open</samp>, încadrați între paranteze rotunde.<br />
+							&nbsp &nbsp &nbsp  La deschidere, este obligatoriu să specificăm modul de deschidere dacă fișierul este declarat de tip <samp>fstream</samp>. Peste tipul <samp>ifstream</samp> se utilizează implicit modul <samp>ios::in</samp>, iar pentru tipul <samp>ofstream</samp> se utiliează implicit tipul <samp>ios::out</samp>.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplul 1</b><br />
+							<script src="https://gist.github.com/Andreea516/c6853af79428116308c0684d7b473a94.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un <i>stream</i> de intrare denumit <samp>f1</samp>, apoi l-am deschis cu ajutorul funcției <samp>open</samp>, asociindu-i fișierul <samp>date.in</samp>. Deoarece nu am precizat discul logic pe care se află acest fișier sau calea către directorul în care se află fișierul se deduce că fișierul se află pe hard-disk în directorul curent. Acelașă efect l-am fi obținut prin deschiderea fișierului la declarare, astfel:<br />
+							<script src="https://gist.github.com/Andreea516/ceece14d28b01c848764823afd37552b.js"></script>
+							&nbsp &nbsp &nbsp <b>Exemplul 2</b><br />
+							<script src="https://gist.github.com/Andreea516/e7734b0402370fe6f35e5d583662933c.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un <i>stream</i> de ieșire, denumit <samp>2</samp>, pe care l-am asociat fișierului fizic <samp>date.out</samp>, care se află pe discul <samp>c:</samp>, în directorul <samp>exemple</samp>, care este un subdirector al directorului <samp>ema</samp><sup>2</sup>. În acest exemplu nu am specificat niciun mod de deschidere. În acest caz se utilizează modul de deschidere implicit (se creează un fișier vid cu numele specificat, în care se vor rezolva doar operații de scriere).<br />
+							&nbsp &nbsp &nbsp <b>Exemplul 3</b><br />
+							<script src="https://gist.github.com/Andreea516/c03408ca7f44bc7ae4f657841c342ecb.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un <i>stream</i> denumit <samp>f3</samp>, pe care la deschidere l-am asociat fișierului <samp>nr.in</samp>. Deoarece tipul <samp>fstream</samp> nu are asociat un mod de deschidere implicit, a fost necesar să precizăm modul de deschidere. În acest caz, modul de deschidere este <samp>ios::in</samp>, ceea ce înseamnă că fișierul a fost deschis ca fișier de intrare (numai pentru operații de citire). <br />
+							&nbsp &nbsp &nbsp <b>Exemplul 4</b><br />
+							<script src="https://gist.github.com/Andreea516/86e69f2eaa62754d461b8c9603d0c8fe.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un <i>stream</i> denumit <samp>f4</samp>, care la decshidere l-am asociat fișierului <samp>nr.out</samp>. modul de deschidere specificat este <samp>ios::out</samp>, ceea ce semnifică deschiderea fișierului ca fișier de ieșire (se creează un fișier vid cu numele specificat, în care se vor realiza doar operații de scriere).<br />
+							&nbsp &nbsp &nbsp <b>Exemplul 5</b><br />
+							<<script src="https://gist.github.com/Andreea516/28e4896a24cb0e1994fd9fdb6fc1a880.js"></script>
+							&nbsp &nbsp &nbsp Am declarat un <i>stream</i> denumit <samp>f5</samp>, pe care la deschidere l-am asociat fișierului <samp>nr.ad</samp>. Modul de deschidere specificat este <samp>ios::app</samp>, ceea ce înseamnă că deschidem fișierul ca fișier de ieșire, pentru adăugare de informații la sfaârșit<sup>3</sup>.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Dacă după operația de deschidere a fișierului variabila corespunzătoare are valoarea <samp>NULL</samp>, deducem că operația de deschidere a eșuat (de exemplu, dacă dorim să desxchidem un fișier de intrare care nu există). Este indicat să testăm succesul operației de deschidere înainte de a efectua orice altă operație cu fișierul.<br />
+							<br />
+							&nbsp &nbsp &nbsp <h2>Citirea datelor dintr-un fișier</h2>
+							&nbsp &nbsp &nbsp După deschiderea fișierului ca fișier de intrare se pot realiza operații de citire. În acest scop se poate utiliza operatorul de citire <samp>>></samp>, sau pot fi utilizate funcții-membru specificate.<br />
+							&nbsp &nbsp &nbsp Una dintre particularitățile citirii cu operatorul <samp>>></samp> este faptul că ignoră caracterele albe. Prin urmare, dacă intenționăm să citim toate caracterele din fișier (inclusib spațiu, tab, enter), acest mod de citire este inadecvat.<br />
+							&nbsp &nbsp &nbsp În acest scop putem utiliza funcția-membru <samp>get()</samp>. Funcția <samp>()</samp> are mai multe forma de apel. De exemplu, pentru citirea caracterelor (<samp>char</samp> sau <samp>unsigned char</samp> se poate utiliza astfel:<br />
+							<script src="https://gist.github.com/Andreea516/285e706f8803603530d4335535776fc5.js"></script>
+							&nbsp &nbsp &nbsp Am citit primul caracter din fișier, indiferent dacă este sau nu caracter alb. Evident, în mod similar, funcția <samp>get()</samp> se poate utiliza pentru citirea unui caracter de la tastatura: <samp>cin.get(c)</samp>.<br />
+							<br />
+							&nbsp &nbsp &nbsp <h2>Scrierea datelor într-un fișier</h2>
+							&nbsp &nbsp &nbsp După deschiderea fișierului ca fișier de ieșire, se pot realiza operații de scriere utilizând operatorul de scriere <samp><<</samp>.<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							<script src="https://gist.github.com/Andreea516/ac41d99d2b57f506edbf88f507414fa3.js"></script>
+							&nbsp &nbsp &nbsp <h2>Operații de test</h2>
+							&nbsp &nbsp &nbsp <h3>Detectarea sfârșitului de fișier</h3>
+							&nbsp &nbsp &nbsp În multe aplicații este necesar să citim toate datele existente într-un fișier, fără să avem informații prealabile despre numărul acestora.<br />
+							&nbsp &nbsp &nbsp La deschiderea unui fișier se creează un <i>pointer de fișier</i>, care indică poziția curentă în <i>stream</i>. Orice oprație de citire determină deplasarea pointerului de citire în <i>stream</i>-ul de intrare, respectiv orice operație de scriere determină deplasarea pointerului de scriere în <i>stream</i>-ul de ieșire.<br />
+							&nbsp &nbsp &nbsp Pentru a testa dacă pointerul de fișier a ajuns la sfârșitul fișierului putem utiliza funcția membră<sup>4</sup> <samp>eof()</samp>. Funcția <samp>eof()</samp> returnează valoarea <samp>0</samp> dacă nu am ajuns la sfârșitul fișierului, respectiv o valoare diferită de <samp>0</samp> dacă am ajuns la sfârșit.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							&nbsp &nbsp &nbsp Vom citi și vom număra toate caracterele existente într-un fișier, până la sfârșitul acestuia. <br />
+							<script src="https://gist.github.com/Andreea516/478b27a6f49487e81f4e9480f8501a8c.js"></script>
+							&nbsp &nbsp &nbsp Funcția membru <samp>get()</samp> returnează pointerul de fișier (poziția curentă în <i>stream</i>). Prin urmare, secvența de program ar putea fi scrisă și astfel:<br />
+                            <script src="https://gist.github.com/Andreea516/2534c93735b23a7d2a60d4075d511d2c.js"></script>
+							<h3> &nbsp &nbsp &nbsp  Testarea reușitei unei operații de intrare/ieșire</h3>
+							&nbsp &nbsp &nbsp În aplicațiile didactice, de cele mai multe ori presupunem că datele de intrare sunt corecte. În condiții practice însă trebuie să verificăm reușita oricărei operații de intrare/ieșire și, mai mult, să verificăm și corectitudinea datelor citite.<br />
+							&nbsp &nbsp &nbsp Pentru a testa reușita unei operațiide intrare/ieșire se poate utiliza, de exemplu, funcția membră <samp>good()</samp>. Funcția <samp>good()</samp> returnează o valoare diferită de <samp>0</samp> dacă operația precedentă de intrare/ieșire s-a efectuat cu succces și <samp>0</samp> în caz contrat.<br />
+							&nbsp &nbsp &nbsp Există și alte fucnții de test asemănătoare: <samp>bad()</samp> (care returnează o valoare diferită de <samp>0</samp> dacă s-a efectuat o operație incorectă) sau <samp>fail()</samp> (care returnează o valoare diferită de <samp>0</samp> dacă a apărut o eroare în operațiile de intrare/ieșire până în acel moment).<br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Anticiparea următoarului caracter la intrare</h3>
+							&nbsp &nbsp &nbsp În anumite situații este necesară citirea unor date până la întâlnirea unui anumit caracter, cu excepția acestuia. Pentru a afla anticipat ce caracter urmează în <i>stream</i>-ul de intrare (fără a-l extrage din <i>stream</i>) pentru a utiliza funcția membră <samp>peek()</samp>, care returnează următorul caracter din <i>stream</i><br />
+							<br />
+							<h3>&nbsp &nbsp &nbsp Închiderea unui fișier</h3>
+							&nbsp &nbsp &nbsp După realizarea tuturor operațiilor cu un fișier, acesta trebuie închis. Închiderea unui fișier se realizează prin apelarea funcției membre <samp>close()</samp>.<br/>
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							<script src="https://gist.github.com/Andreea516/b2632b2a6dbfa3bdc5199c04b5be4ae0.js"></script>
+							&nbsp &nbsp &nbsp Operația de închidere este obligatorie, în special pentru fișierele de ieșire. <i>În cazul în care nu închideți fișierul de ieșire, există mari șanse să pierdeți informații!</i><br />
+							<br />
+							<hr>
+							1.La nivel de inițiere, vom trata aceste clase ca un tip al limbajului C++.<br />
+							2.Observați că în șirul de caractere care reprezintă specificatorul de fișier a fost necesar să dublăm caracterul special <i>backslash</i>!<br />
+							3.app - append (adăugare).<br />
+							4.Denumirea <i>eof</i> provine de la <i>end of line</i> - sfârșit de fișier.<br />
+							</p>
+							</div>
+
+						</div>
+
+					</div>
+				
+					
+					
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>

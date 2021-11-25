@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<title>Transferul parametrilor prin referință</title>
+<meta charset="utf-16">
+<meta name="description" content="Informatică pentru bacalaureat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_post_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/news_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			
+			<!-- Logo -->
+
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images\logo.png" alt="Logo">
+					<span>Bac Is Coming</span>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">Acasă</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Resurse</button>
+                                <div class="dropdown-content">
+                                    <a href="resurse9.html">Clasa a IX-a</a>
+                                    <a href="resurse10.html">Clasa a X-a</a>
+                                    <a href="resurse11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Probleme</button>
+                                <div class="dropdown-content">
+                                    <a href="probleme9.html">Clasa a IX-a</a>
+                                    <a href="probleme10.html">Clasa a X-a</a>
+                                    <a href="probleme11.html">Clasa a XI-a</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Variante bac</button>
+                                <div class="dropdown-content2">
+                                    <a href="subiecte.html">Subiecte 2012-2019</a>
+                                    <a href="variante2007.html">Variante 2007</a>
+                                    <a href="variante2008.html">Variante 2008</a>
+									<a href="variante2009.html">Variante 2009</a>
+                                </div>
+                        </div>
+						</li>
+
+						<li class="main_nav_item">
+						<div class="dropdown">
+                           <button class="dropbtn">Subiecte admitere</button>
+                                <div class="dropdown-content">
+                                    <a href="iasi.html">Iași</a>
+                                    <a href="bucuresti.html">București</a>
+                                    <a href="cluj.html">Cluj</a>
+                                </div>
+                        </div>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" style="height: 40%; weigh: 40%" alt="">
+			<span>
+			   <ul>
+			      <li style='text-align:center; font-size: 40%'> &nbsp &nbsp Contactează-ne</li>
+				  <li style='text-align:center; font-size: 40%'>&nbsp &nbsp 0233 740290</li>
+			   </ul>  
+			</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+	</header>
+	
+	
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+
+		<!-- Menu Close Button -->
+
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+
+
+		<!-- Menu Items -->
+
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Acasa</a></li>
+					<li class="menu_item menu_mm"><a href="resurse9.html">Resurse</a></li>
+					<li class="menu_item menu_mm"><a href="probleme9.html">Probleme</a></li>
+					<li class="menu_item menu_mm"><a href="subiecte.html">Variante bac</a></li>
+					<li class="menu_item menu_mm"><a href="iasi.html">Subiecte admitere</a></li>
+				</ul>
+
+
+
+				<!-- Menu Social -->
+
+			
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/news_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1 style="font-size: 43px">Funcții</h1>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Post Column -->
+
+				<div class="col-lg-8">
+					
+					<div class="news_post_container">
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_post_image">
+								<img src="images/news_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+							</div>
+							<div class="news_post_top d-flex flex-column flex-sm-row">
+								<div class="news_post_date_container">
+									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
+										<div>20</div>
+										<div>ian</div>
+									</div>
+								</div>
+								<div class="news_post_title_container">
+									<div class="news_post_title">
+										<a href="news_post.html">Transferul parametrilor prin referință</a>
+									</div>
+								</div>
+							</div>
+							<div class="news_post_text">
+							<p>
+							&nbsp &nbsp &nbsp În modulul precedent am văzut că în limbajul C/C++ transferul parametrilor se face prin valoare. Totuși apare frecvent necesitatea de a modifica valorile parametrilor funcției și de a utiliza în afara funcției valorile modificate. În acest caz, este necesar să transmitem funcției adrese (<b>transfer prin referință</b>).<br />
+							&nbsp &nbsp &nbsp Există două modalități de a transmite parametri prin referință: utilizând <b>pointeri</b> (soluție utilizabilă atât în limbajul C, cât și în C++) sau utilizând <b>referințe</b> (tipul referință fiind disonibil numai în limbajul C++).<br />
+							<h2>&nbsp &nbsp &nbsp Utilizarea pointerilor ca parametri</h2>
+							&nbsp &nbsp &nbsp Să reluăm funcția <samp>schimba()</samp>, care intenționa să interschimbe valorile parametrilor <samp>x</samp> și <samp>y</samp>, transmițând de data aceasta adresele parametrilor care trebuie modificați:
+							<br />
+							<script src="https://gist.github.com/Andreea516/dd2b58238905250bc2a781d2fa150182.js"></script>
+							&nbsp &nbsp &nbsp De data acceasta, să presupunem că am declarat variabilele:<br />
+							<br />
+							<script src="https://gist.github.com/Andreea516/c97e2e02a518b3d5fe502c2758a66f26.js"></script>
+							&nbsp &nbsp &nbsp Secvența de instrucțiuni:
+							<br />
+							<script src="https://gist.github.com/Andreea516/84998b59a227dc07ab34f39a98f6fd34.js"></script>
+							afișează pe ecran:
+							<br />
+							<script src="https://gist.github.com/Andreea516/84998b59a227dc07ab34f39a98f6fd34.js"></script>
+							&nbsp &nbsp &nbsp Deci interschimbarea s-a efectuat cu succes!<br />
+							&nbsp &nbsp &nbsp Observați că de data aceasta parametrii funcție nu sunt numere întregi, ci pointeri la întregi. La apelul funcției am ținut cont de tipul parametrilor și am transmis adresele valorilor ale căror valori trebuie să fie interschimbate. <br />
+						    <br />
+							<h2>&nbsp &nbsp &nbsp Tipul referință</h2>
+							&nbsp &nbsp &nbsp Tipul referință este o facilitate suplimentară a limbajului C++, introdusă pentru a acoperi o lacună importantă a limbajului C, și anume transmiterea parametrilor prin referință.<br />
+							&nbsp &nbsp &nbsp O variabilă tip referință conține adresa unei variabile (asemănător unui pointer), dar nu este interpretată ca pointer, ci cu un alt nume asociat variabilei (un alias, un sinonim).<br />
+							&nbsp &nbsp &nbsp Declararea unei referințe:
+							<br />
+							<script src="https://gist.github.com/Andreea516/b50646a890239df77179a4495b7d44f4.js"></script>
+							&nbsp &nbsp &nbsp Declarația de mai sus creează un alt nume (<samp>variabila_referinta</samp>) pentru variabila <samp>variabila_referinta</samp> având tipul <samp>tip</samp>.<br />
+							&nbsp &nbsp &nbsp Se pot crea referințe către variabile de orice tip. Ulterior în program puteți utiliza atât variabila, cât și referința către ea (sinonimul).<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							<script src="https://gist.github.com/Andreea516/7f26496d0f1b971e0b0d1971ec8776a3.js"></script>
+							&nbsp &nbsp &nbsp Am declarat variabila întreagă <samp>x</samp> și o referință pentru <samp>x</samp>, denumită <samp>rx</samp>. De exemplu, dacădorim să afișăm valoarea variabilei <samp>x</samp>, putem scrie fie:
+							<br />
+							<script src="https://gist.github.com/Andreea516/cd30b14aa3948e3ace75897275d492a3.js"></script>
+							fie:
+							<br />
+							<script src="https://gist.github.com/Andreea516/d3d9ae8593656d0688657668254dfd28.js"></script>
+							&nbsp &nbsp &nbsp Efectu va fi același!<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Observații</b><br />
+							1.Valoarea unei referințe <b>nu</b> poate fi schimbată, ea rămâne valabilă pe toată durata execuției blocului de program în care este declarată.<br />
+							2.Deși referința seamănă cu o variabilă, ea nu este însăși variabila, ci doar o referire la variabila respectivă (o adresă).<br />
+							&nbsp &nbsp &nbsp Aparent, referințele nu sunt grozav de utile. Dar să analizăm situația în care utilizăm referințe drept parametri ai unei funcții. Să reluăm funcția <samp>schimba()</samp>, Care intenționa să interschimbe valorile parametrilor <samp>x</samp> și <samp>y</samp>, transmițând de data aceasta referințe către parametrii care trebuie modificați:<br />
+							<script src="https://gist.github.com/Andreea516/82c64d0667d6447f98948358c89d3596.js"></script>
+							&nbsp &nbsp &nbsp De data aceasta, dacă presupunem că am declarat variabilele <samp>a</samp> și <samp>b</samp> și două referințe către acestea <samp>ra</samp>, respectiv <samp>rb</samp>:<br />
+							<script src="https://gist.github.com/Andreea516/3754e45579a6fd318809ad1f11493aaa.js"></script>
+							secvența de instrucțiuni:<br />
+							<script src="https://gist.github.com/Andreea516/d29e70b639b62042b05c69a5be85e3be.js"></script>
+							afișează pe ecran:<br />
+							<script src="https://gist.github.com/Andreea516/9a64e9ee5d436c5160e6ff20f84dab76.js"></script>
+							&nbsp &nbsp &nbsp Deci și în acest caz interschimbarea s-a efectuat cu succes!<br />
+							<div class="news_post_quote">
+								<p class="news_post_quote_text">&nbsp &nbsp &nbsp <span>Î</span>n concluzie, în cazul utilizării referințelor drept parametri, beneficiem de toate avantajele pointerilor (posibilitatea de a modifica valorile parametrilor), fără complicații de sintaxă.</p>
+							</div>
+							<br />
+							&nbsp &nbsp &nbsp Evident, orice operație cu referințe se poate realiza și cu ajutorul pointerilor, afirmația reciprocă nefiind valabilă.<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							&nbsp &nbsp &nbsp Am fi putut apela funcția <samp>schimba()</samp> și sub forma:<br />
+							<script src="https://gist.github.com/Andreea516/16fa7325cf8cb5a9045d503689c5a79a.js"></script>
+							&nbsp &nbsp &nbsp În acest caz, compilatorul va transmite automat sdresele variabilelor <samp>a</samp> și <samp>b</samp>, fără a utiliza o variabilă referință intermediară. Aceste adrese sunt atribuite la apel parametrilor de tip referință corespunzători.<br />
+							&nbsp &nbsp &nbsp S-ar putea spune că  referințele sunt <b>pointeri care se deferențiază automat</b>. Pentru compilatorul C++, referința este o adresă. Pentru programator, referința este doar un alt nume pentru variabilă, deci poate fi interpretată ca valoare a variabilei.<br />
+							&nbsp &nbsp &nbsp Utilizarea referințelor este utilă nu numai atunci când un parametru trebuie să își modifice valoarea. Transmiterea unui parametru prin valoare presupune copierea valorilor parametrului pe stivă (ceea ce uneori poate fi costisitor atât ca spațiu, cât și ca timp). În cazul în care variabila transmisă ca parametru este o structură de date voluminoasă, este preferabil să utilizăm o referință către variabilă, deoarece pe stivă se va copia doar adresa. Dacă dorim să evităm modificarea valorii unui parametru transmis prin referință, putem preceda declarația parametrului de specificatorul <samp>const</samp>, care împiedică modificarea valorii. Orice tentativă de a modifica valoarea unui parametru transmis prin referință a cărui declarație este precedată de <samp>const</samp> va fi sancționată cu eraore la compilare. <br />
+							&nbsp &nbsp &nbsp De exemplu, dacă modificăm antetul funcției <samp>schimba()</samp> astfel:<br />
+							<script src="https://gist.github.com/Andreea516/e2be2b6ab9714d497e196c1ccbd79efb.js"></script>
+							nu putem modifica valoarea parametrului <samp>x</samp> (atribuirea <samp>x=y</samp> va genera eroare).<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							&nbsp &nbsp &nbsp Să urmărim, pas cu pas, pe un exemplu simplu, ce se întâmplă în fiecare moment al execuției unui progra, care conține un apel de funcție. Pentru identificarea acțiunilor, numerotăm liniile programului.<br />
+							<script src="https://gist.github.com/Andreea516/380abf9f2a1854526ef19813f1ec69ab.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp Urmărind fiecare instrucțiune executabilă, indicăm în tabelul următor linia care se execută, valorile variabilelor globale <samp>x</samp> și <samp>y</samp>, valorile depuse pe stiva corespunzătoare parametrilor formal <samp>a</samp> și <samp>b</samp> și ce anume va afișa pe ecran. Semnul '•' semnifică o adresă, săgeata indicând variabila la care face referire adresa.<br />
+							//isert poza<br />
+							&nbsp &nbsp &nbsp <b>Observație</b><br />
+							1.Nu uitați că numele unui tablou este un pointer către primul element al tabloului! Prin urmare, când utilizați vectori ca parametri, la definirea/declararea funcției puteți utiliza pentru declararea parametrului una din constrțiile echivalen> <samp>tip *</samp>, <samp>tip[]</samp> sau <samp>tip[Max]</samp> (unde <samp>tip</samp> reprezintă tipul componentelor vectorului, iar <samp>Max</samp> numărul maxim de elemente din vector). Nu este obligatorie specificarea numărului de elemente din vector între parantezele pătrate.<br />
+							2.Când apelați o funcție care are parametri de tip tablou, trebuie să tranmiteți doar numele tabloului (acesta este el însuși o adresă!).<br />
+							<br />
+							&nbsp &nbsp &nbsp <b>Exemplu</b><br />
+							&nbsp &nbsp &nbsp Scriem un program care citește un vector <samp>a</samp> cu <samp>n</samp> elemente întregi și un vector <samp>b</samp> cu <samp>m</samp> elemente întregi, apoi afișează pe ecran cei doi vectori citiți.<br />
+							&nbsp &nbsp &nbsp Varianta C:<br />
+							<script src="https://gist.github.com/Andreea516/782af7d74cfe4461b3e2d428751e9208.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp În exemplul precedent am declarat două funcții: <samp>citire_vector()</samp> și <samp>afisare_vector()</samp>. Funcția <samp>citire_vector()</samp> are doi parametri care sunt pointeri cu tipul de bază <samp>int (int *)</samp>. Observați că la definirea funcției <samp>citire_vector</samp> am declarat al doilea parametru (vectorul) în mod echivalent, specificând și numărul maxim de componente din vector (<samp>int x[10]</samp>). Primul parametru al funcției <samp>citire_vector()</samp> este numărul de elemente din vector. Este declarat ca pointer, deoarece funcția <samp>citire_vector()</samp> trebuie să transmită în exterior valoarea citită.<br />
+							&nbsp &nbsp &nbsp La apelul funcțiilor, observți că am precizat doar numele vectorului care se citește, respectiv se afișează. Apelul este corect, numele vectorului fiind un pointer către primul element din vector.<br />
+							&nbsp &nbsp &nbsp Varianta C++ va utiliza referințe în loc de pointeri:<br />
+							<script src="https://gist.github.com/Andreea516/87e237dce5f54d329c079dc94b060230.js"></script>
+							<br />
+							&nbsp &nbsp &nbsp <b>Exercițiu</b><br />
+							&nbsp &nbsp &nbsp Scrieți un program care citește o matrice pătratică <samp>a</samp> cu <samp>n x n</samp> elemente întregi și o matrice matrice pătratică <samp>b</samp> cu <samp>m x m</samp> elemente întregi, apoi afișează pe ecram cele două matrice citite.
+							
+							
+							</p>
+							</div>
+
+						</div>
+
+					</div>
+				
+
+
+				</div>
+
+				<!-- Sidebar Column -->
+
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Archives -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Arhivă</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="cl9_1.7.html">Structura generală a unui program C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl9_5.3.html">Prelucrări elementare pe vectori</a></li>
+								<li class="sidebar_list_item"><a href="cl10_1.2.html">Subprograme în limbajul C/C++</a></li>
+								<li class="sidebar_list_item"><a href="cl10_4.1.html">Șiruri de caractere</a></li>
+								<li class="sidebar_list_item"><a href="cl11_2.4.html">Parcurgerea grafurilor</a></li>
+							</ul>
+						</div>
+
+						<!-- Latest Posts -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>Ultimile postări</h3>
+							</div>
+
+							<div class="latest_posts">
+								
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_1.jpg" alt="https://unsplash.com/@dsmacinnes">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2019.html">Bacalaureat 2019</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_2.jpg" alt="https://unsplash.com/@erothermel">
+									</div>
+									<div class="latest_post_title"><a href="iasi.html">Admitere 2018</a></div>
+									
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post">
+									<div class="latest_post_image">
+										<img src="images/latest_3.jpg" alt="https://unsplash.com/@element5digital">
+									</div>
+									<div class="latest_post_title"><a href="subiecte2018.html">Bacalaureat 2018</a></div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="footer">
+		<div class="container">
+
+			
+			
+
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+				
+					<!-- Footer Column - About -->
+
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images\logo.png" alt="" width='20%' height='20%'>
+								<span>Bac is coming</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">Platforma noastră își dorește să vină în ajutorul tuturor celor care își doresc să învețe informatică, punând accent în special pe pregătirea elevilor de clasa a XII-a pentru examenul de bacalaureat.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Meniu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Acasă</a></li>
+								<li class="footer_list_item"><a href="resurse9.html">Resurse</a></li>
+								<li class="footer_list_item"><a href="probleme9.html">Probleme</a></li>
+								<li class="footer_list_item"><a href="subiecte.html">Variante bac</a></li>
+								<li class="footer_list_item"><a href="iasi.html">Subiecte admitere</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Link-uri utile</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="termeni.html">Termeni și condiții</a></li>
+								<li class="footer_list_item"><a href="intrebari.html">Întrebări frecvente</a></li>
+								<li class="footer_list_item"><a href="https://www.facebook.com/groups/309467833065926/">Comunitate</a></li>
+								<li class="footer_list_item"><a href="cookies.html">Politica de cookies</a></li>
+								<li class="footer_list_item"><a href="securitate.html">Politica de securitate</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Str. Mihai Eminescu, Nr.4, Roman
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									0233 740290
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images\envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>office@baciscoming.ro
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Toate drepturile rezervate | Proiect realizat de Ilie Oana-Andreea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="https://ro.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="https://ro.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/news_post_custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/elements_custom.js"></script>
+<script src="js/news_custom.js"></script>
+
+
+</body>
+</html>
